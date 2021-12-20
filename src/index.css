@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 750px;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.form-field, .form-field2, input[type="date"] {
+  margin: 10px 0 10px 0;
+  padding: 15px 15px 15px 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+}
+
+#state, #gender{
+  padding: 12px 0 0 0;
+  width: 98%;
+}
+
+input, textarea, input[type="date"] {
+  background: #f2f2f2;
+}
+
+button {
+  background: #5d5f5d;
+  color: white;
+  cursor: pointer; 
+  align-self: center;
+}
+
+#button{
+  margin-top: 50px;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.cstate, .cfirst-name, .clast-name, .cfather-name, .caddress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:15px;
+}
+
+.dob-gender {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:15px;
+}
+
+/* .cstate #state,
+.cstate #tstate,
+.cfirst-name #first-name,
+.cfirst-name #tfirst-name,
+.clast-name #last-name,
+.clast-name #tlast-name,
+.cfather-name #father-name,
+.cfather-name #tfather-name {
+  display: inline-block;
+  min-width: 45%;
+} */
+
+/* .cstate #state,
+.cfirst-name #first-name,
+.clast-name #last-name,
+.cfather-name #father-name {
+  float: left;
+}
+
+.cstate #tstate,
+.cfirst-name #tfirst-name,
+.clast-name #tlast-name,
+.cfather-name #tfather-name {
+  float: right;
+} */
